@@ -289,3 +289,39 @@ html, body {
 /*!*    obrazki wieksze niz kolumny *!*/
 /*}*/
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+}
+
+.contact-form  button{
+    align-self: flex-end;
+}
+.inner.inner--narrow {
+    width: 56.5rem;
+}
+.inner.inner--narrow .section__col {
+    width: 50%;
+}
+.contact-form .contact-form__group {
+    display: flex;
+    gap: 0.625rem;
+    align-items: flex-start;
+
+}
+
+.contact-form .contact-form__group .contact-form__checkbox{
+    order: -10;
+}
+/*stylowanie checkboxa (inaczej wyglada na kazdej przegladarce), ukrywa sie go i wstawia sie grafike*/
+
+.contact-form .contact-form__group label {
+    font-size: .625rem;
+    color: rgb(178, 178, 178);
+    line-height: 1.4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    margin-top: -.15rem;
+}
