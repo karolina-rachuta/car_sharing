@@ -1,0 +1,72 @@
+:root {
+    --primary-color: rgb(255,0,0);
+    --secondary-color: rgb(255,255,255);
+}
+html, body {
+    font-size: 16px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: .125rem solid rgba(255, 255, 255, 0.2);
+}
+
+.header .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ś
+.inner {
+    width: 100%;
+    /*jak bedzie flex box to zajeloby tylko ile kontent wiec robimy 100 aby zajelo cala szerokosc*/
+    max-width: 70.5rem;
+    padding-inline: 1.25rem;
+    margin-inline: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo .logo__img {
+    width: 1.9375rem;
+    height: 2.1875rem;
+    margin-right: 0.625rem;
+}
+
+.logo .logo__text {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-right: 0.3135rem;
+}
+
+.logo .logo__text.logo__text--highlight {
+    color: var(--primary-color);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu .menu__item {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 2.0625rem;
+    padding-bottom: 2.0625rem;
+    display: inline-block;
+    width: 100%;
+    min-width: 8rem;
+    text-align: center;
+}
+
+.menu .menu__item.menu__item--active, .menu .menu__item:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
