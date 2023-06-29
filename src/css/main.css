@@ -194,7 +194,11 @@ html, body {
 
 .box {
 }
-
+.box.box--dark {
+    background-color: rgb(40, 39, 44);
+    padding-top: 4.125rem;
+    padding-bottom: 6.25rem;
+}
 .section {
     margin-bottom: 6.25rem;
 }
@@ -208,7 +212,10 @@ html, body {
     position: relative;
     margin-bottom: 2.5625rem;
 }
-
+.section .section__hdl.section__hdl--secondary {
+    color: var(--secondary-color);
+    margin-bottom: 4.6875rem;
+}
 .section .section__hdl:before, .section .section__hdl:after {
     content: " ";
     width: 3.125rem;
@@ -246,13 +253,26 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
 }
+.section .section__col.section__col--secondary {
+    align-items: center;
+    text-align: center;
+}
 
+.section .section__col.section__col--secondary h3{
+    text-align: center;
+    color: var(--secondary-color);
+}
+.section .section__col.section__col--secondary p {
+    color: rgb(178, 178, 178);
+}
 .section .section__img {
     width: 100%;
     display: block;
     margin-bottom: .5625rem;
 }
-
+.section .section__img.section__img--secondary {
+    max-width: 10.625rem;
+}
 .section .section__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -268,3 +288,4 @@ html, body {
 /*    width: 100%;*/
 /*!*    obrazki wieksze niz kolumny *!*/
 /*}*/
+
