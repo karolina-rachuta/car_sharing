@@ -9,6 +9,9 @@ html, body {
 .header {
     background-color: rgba(0, 0, 0, 0.4);
     border: .125rem solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 42;
+/*    aby ustawic wartosc z- warswty potrzebujemy position, czemu 42? autostop przez galaktyke, moze byc inna wartosc*/
 }
 
 .header .header__inner {
@@ -16,7 +19,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
 }
-ś
+
 .inner {
     width: 100%;
     /*jak bedzie flex box to zajeloby tylko ile kontent wiec robimy 100 aby zajelo cala szerokosc*/
@@ -70,3 +73,23 @@ html, body {
 .menu .menu__item.menu__item--active, .menu .menu__item:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.intro {
+    background-image: url("../images/intro-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5.25rem;
+/*    aby przesunac tlo na gore pod header*/
+}
+.intro .intro__box{
+    /*display: flex;*/
+}
+.intro .intro__box.intro__box--row {}
+.intro .intro__hdl {}
+.intro .intro__lead {}
+.intro .intro__box--btn {}
