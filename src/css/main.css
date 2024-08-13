@@ -298,6 +298,20 @@ html, body {
     order: -10;
 }
 
+.contact-form .contact-form__input,
+.contact-form .contact-form__checkbox {
+border: 1px solid #B2B2B2;
+border-radius: 8px;
+padding: 9px 10px;
+}
+
+.contact-form .contact-form__input::placeholder {
+    font-family: "Nunito Sans", sans-serif;
+    color: #B2B2B2;
+    font-size: 16px;
+    line-height: 1.375;
+}
+
 .contact-form .contact-form__group label {
     font-size: .625rem;
     color: rgb(178, 178, 178);
@@ -305,4 +319,6 @@ html, body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     margin-top: -.15rem;
+    text-align: justify;
+    padding-right: 5px;
 }
