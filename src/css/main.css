@@ -28,7 +28,6 @@ html, body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: 0.0625rem solid var(--secondary-color);
-
 }
 
 .btn-large {
@@ -65,7 +64,6 @@ html, body {
     border: .125rem solid rgba(255, 255, 255, 0.2);
     position: relative;
     z-index: 42;
-    /*    aby ustawic wartosc z- warswty potrzebujemy position, czemu 42? autostop przez galaktyke, moze byc inna wartosc*/
 }
 
 .header .header__inner {
@@ -76,7 +74,6 @@ html, body {
 
 .inner {
     width: 100%;
-    /*jak bedzie flex box to zajeloby tylko ile kontent wiec robimy 100 aby zajelo cala szerokosc*/
     max-width: 70.5rem;
     padding-inline: 1.25rem;
     margin-inline: auto;
@@ -135,15 +132,10 @@ html, body {
     background-size: cover;
     min-height: 100vh;
     margin-top: -5.5rem;
-    /*    aby przesunac tlo na gore pod header*/
     color: var(--secondary-color);
     text-align: center;
     font-family: "Nunito Sans", sans-serif;
     margin-bottom: 3.875rem;
-    /*    91-margines tutylu h2*/
-}
-
-.intro .intro__box {
 }
 
 .intro .intro__bg {
@@ -155,13 +147,10 @@ html, body {
     align-items: center;
 }
 
-/*!*dodalismy to aby miec maske ciemna na bg*!*/
-
 .intro .intro__box.intro__box--row {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    /*    25px pomiedzy buttons*/
 }
 
 .intro .intro__hdl {
@@ -179,26 +168,14 @@ html, body {
     letter-spacing: 0;
     margin-bottom: 3.375rem;
     line-height: 1.375;
-    /*   line height ratio, bez jednostki*/
-
 }
 
-.intro .intro__box--btn {
-    /*text-align: center;*/
-}
-
-.intro .intro__btn {
-
-}
-
-
-.box {
-}
 .box.box--dark {
     background-color: rgb(40, 39, 44);
     padding-top: 4.125rem;
     padding-bottom: 6.25rem;
 }
+
 .section {
     margin-bottom: 6.25rem;
 }
@@ -212,10 +189,12 @@ html, body {
     position: relative;
     margin-bottom: 2.5625rem;
 }
+
 .section .section__hdl.section__hdl--secondary {
     color: var(--secondary-color);
     margin-bottom: 4.6875rem;
 }
+
 .section .section__hdl:before, .section .section__hdl:after {
     content: " ";
     width: 3.125rem;
@@ -226,12 +205,13 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 0.625rem;
-
 }
-.section .section__hdl:before{
+
+.section .section__hdl:before {
     margin-left: -0.625rem;
     transform: translateY(-50%) translateX(-100%);
 }
+
 .section .section__hdl--ternary {
     text-align: left;
     text-transform: uppercase;
@@ -253,26 +233,31 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
 }
+
 .section .section__col.section__col--secondary {
     align-items: center;
     text-align: center;
 }
 
-.section .section__col.section__col--secondary h3{
+.section .section__col.section__col--secondary h3 {
     text-align: center;
     color: var(--secondary-color);
 }
+
 .section .section__col.section__col--secondary p {
     color: rgb(178, 178, 178);
 }
+
 .section .section__img {
     width: 100%;
     display: block;
     margin-bottom: .5625rem;
 }
+
 .section .section__img.section__img--secondary {
     max-width: 10.625rem;
 }
+
 .section .section__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -284,11 +269,6 @@ html, body {
     margin-top: 0;
 }
 
-/*img {*/
-/*    width: 100%;*/
-/*!*    obrazki wieksze niz kolumny *!*/
-/*}*/
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -296,26 +276,27 @@ html, body {
     gap: 1.25rem;
 }
 
-.contact-form  button{
+.contact-form  button {
     align-self: flex-end;
 }
+
 .inner.inner--narrow {
     width: 56.5rem;
 }
+
 .inner.inner--narrow .section__col {
     width: 50%;
 }
+
 .contact-form .contact-form__group {
     display: flex;
     gap: 0.625rem;
     align-items: flex-start;
-
 }
 
-.contact-form .contact-form__group .contact-form__checkbox{
+.contact-form .contact-form__group .contact-form__checkbox {
     order: -10;
 }
-/*stylowanie checkboxa (inaczej wyglada na kazdej przegladarce), ukrywa sie go i wstawia sie grafike*/
 
 .contact-form .contact-form__group label {
     font-size: .625rem;
